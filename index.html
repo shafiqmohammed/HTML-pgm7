@@ -1,21 +1,138 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Layout Styles with Aside</title>
+<title>Modern Website Layout</title>
 
 <style>
+* {
+    box-sizing: border-box;
+}
 
-/* Write your CSS here */
+body {
+    max-width: 1000px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: white;
+    border: 2px solid #a855f7;
+}
 
+header {
+    background: #6d28d9;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+nav {
+    background: #1f2937;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #d8b4fe;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: stretch;
+}
+
+section {
+    flex: 2;
+    background: #1f2937;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+aside {
+    flex: 1;
+    background: #312e81;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #c084fc;
+}
+
+footer {
+    background: #6d28d9;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+}
 </style>
-
 </head>
 
 <body>
 
-<!-- Write your HTML code here -->
+<header>
+    <h1>Creative Web Design</h1>
+    <p>Explore the World of Web Development</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+</nav>
+
+<main>
+    <section>
+        <h2>Welcome to Our Website</h2>
+        <p>
+            Web development helps us create attractive and useful
+            websites using HTML, CSS, and JavaScript.
+        </p>
+
+        <h2>Our Services</h2>
+        <p>
+            We create responsive websites, modern layouts,
+            and user-friendly web applications.
+        </p>
+    </section>
+
+    <aside>
+        <h2>Latest Updates</h2>
+        <p>Learn new web technologies.</p>
+        <p>Explore creative website designs.</p>
+        <p>Build your first web project.</p>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; 2026 Creative Web Design | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
